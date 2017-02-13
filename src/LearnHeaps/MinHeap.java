@@ -77,7 +77,7 @@ public class MinHeap {
         int index = 0;
         while (hasLeftChild(index)) {
             int smallerIndex = getLeftChildIndex(index);
-            if (hasRightChild(index) && getRightChild(index) < getLeftChildIndex(index)) {
+            if (hasRightChild(index) && getRightChild(index) < getLeftChild(index)) {
                 smallerIndex = getRightChildIndex(index);
             }
             if (items[index] < items[smallerIndex]) {
